@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hello, Jenkins! This is a simple Express.js app.');
 });
 
+app.get('/about', (req, res) => {
+    res.send('This is a simple Express.js app.');
+    });
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
